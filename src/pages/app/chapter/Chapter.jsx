@@ -4,7 +4,7 @@ import { useOutletContext, useParams } from "react-router-dom";
 
 function Chapter() {
   const { chapterId } = useParams();
-  const course = useOutletCoCoding-Ninjas-React-Router-SixthTaskntext();
+  const course = useOutletContext();
   const chapter = course.chapters.find(
     // convert the number to string for equality check
     (chapter) => String(chapter.chapter) === chapterId
